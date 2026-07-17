@@ -15,6 +15,7 @@ public class main extends Application {
     public void start(Stage escenarioPrincipal) throws Exception {
         // Vista de la calculadora 
         CalculadoraView calculadora = new CalculadoraView(); 
+ 
         
         // Creamos la escena pasándole directamente la vista
         Scene escena = new Scene(calculadora.getView(), 266, 390);
@@ -23,6 +24,7 @@ public class main extends Application {
         //nombre con el que sera mostrada la calculadora
         escenarioPrincipal.setTitle("Calculadora de Interiano");
         escenarioPrincipal.setScene(escena);
+        escenarioPrincipal.setResizable(false);
         escenarioPrincipal.show();
     }
 }
